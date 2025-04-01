@@ -1,7 +1,9 @@
 name: Run Hello World Container
 
 on:
-  workflow_dispatch:  # Permite executar manualmente pelo GitHub Actions
+  push:
+    branches:
+      - main  # Executa sempre que houver um push na branch main
 
 jobs:
   run-hello-world:
